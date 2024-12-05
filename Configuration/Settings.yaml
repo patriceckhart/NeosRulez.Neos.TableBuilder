@@ -8,12 +8,3 @@ Neos:
         table:
           position: 'end'
           label: Table
-    userInterface:
-      translation:
-        autoInclude:
-          NeosRulez.Neos.TableBuilder:
-            - Main
-            - 'NodeTypes/*'
-            - 'NodeTypes/Content/*'
-            - 'NodeTypes/Component/*'
-            - 'NodeTypes/Mixin/*'
