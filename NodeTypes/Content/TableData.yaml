@@ -1,0 +1,20 @@
+'NeosRulez.Neos.TableBuilder:TableData':
+  superTypes:
+    'NeosRulez.Neos.TableBuilder:Content.Abstract': true
+    'Neos.Neos:ContentCollection': true
+  ui:
+    label: Table data
+    icon: fas fa-border-none
+  constraints:
+    nodeTypes:
+      'NeosRulez.Neos.TableBuilder:Content.Abstract': false
+      'NeosRulez.Neos.TableBuilder:Table': false
+  properties:
+    colSpan:
+      type: string
+      ui:
+        label: Colspan
+        reloadPageIfChanged: true
+        inspector:
+          group: table
+          position: 2

@@ -1,0 +1,10 @@
+prototype(NeosRulez.Neos.TableBuilder:TableData) < prototype(Neos.Neos:ContentComponent) {
+
+    className = ${q(node).property('className')}
+    colSpan = ${q(node).property('colSpan')}
+    useTh = ${node.parent.parent.nodeType.name == 'NeosRulez.Neos.TableBuilder:TableHead' ? true : false}
+
+    renderer = afx`
+        <Neos.Neos:ContentCollection @context.node={node} tagName={props.useTh ? 'th' : 'td'} attributes.colspan={props.colSpan} attributes.class={props.className} />
+    `
+}

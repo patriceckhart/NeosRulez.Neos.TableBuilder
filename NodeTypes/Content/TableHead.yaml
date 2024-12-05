@@ -1,0 +1,12 @@
+'NeosRulez.Neos.TableBuilder:TableHead':
+  superTypes:
+    'NeosRulez.Neos.TableBuilder:Content.Abstract': true
+    'Neos.Neos:ContentCollection': true
+  ui:
+    label: Table head
+    icon: fas fa-border-none
+  constraints:
+    nodeTypes:
+      'Neos.Neos:Content': false
+      'NeosRulez.Neos.TableBuilder:Table': false
+      'NeosRulez.Neos.TableBuilder:TableRow': true

@@ -1,0 +1,20 @@
+'NeosRulez.Neos.TableBuilder:Content.Abstract':
+  abstract: true
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    group: table
+    inspector:
+      groups:
+        table:
+          label: Table
+          icon: fas fa-border-none
+  properties:
+    className:
+      type: string
+      ui:
+        label: CSS classname
+        reloadPageIfChanged: true
+        inspector:
+          group: table
+          position: 1

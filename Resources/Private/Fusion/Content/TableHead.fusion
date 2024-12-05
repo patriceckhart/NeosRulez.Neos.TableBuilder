@@ -1,0 +1,8 @@
+prototype(NeosRulez.Neos.TableBuilder:TableHead) < prototype(Neos.Neos:ContentComponent) {
+
+    className = ${q(node).property('className')}
+
+    renderer = afx`
+        <Neos.Neos:ContentCollection @context.node={node} tagName="thead" attributes.class={props.className} />
+    `
+}

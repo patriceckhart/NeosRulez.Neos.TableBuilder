@@ -1,0 +1,8 @@
+'Neos.Neos:ContentCollection':
+  constraints:
+    nodeTypes:
+      'NeosRulez.Neos.TableBuilder:Table': true
+      'NeosRulez.Neos.TableBuilder:TableBody': false
+      'NeosRulez.Neos.TableBuilder:TableData': false
+      'NeosRulez.Neos.TableBuilder:TableHead': false
+      'NeosRulez.Neos.TableBuilder:TableRow': false
